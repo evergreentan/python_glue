@@ -18,7 +18,12 @@ http://docs.scipy.org/doc/numpy/user/c-info.python-as-glue.html
 ## Stata
 This section introduces how to run stata do file in python (IPython) in Windows and Mac OS X.
 
-### Windows System
+### 1. Write and execute stata commands in IPython
+
+There is a nice module, [ipystata](https://github.com/TiesdeKok/ipystata), written Ties de Kok. You can find documentation about installation and usage in the GitHub page.
+
+### 2. Run do files in IPython
+#### Windows System
 Prerequisites:
 - Stata installed correctly.
 - Stata installation directory: e.g. "C:\Program Files (x86)\Stata14\StataSE-64"
@@ -26,7 +31,7 @@ Prerequisites:
 Reference: 
 http://www.stata.com/support/faqs/windows/batch-mode/
 
-### Mac OS X
+#### Mac OS X
 Prerequisites:
 - Stata installed correctly.
 - Install Stata(console) using the Terminal utility (this may not work with El Capatin as I have got error saying "The terminal utility could not be installed. ln: /usr/bin/stata-se: Operation not permitted" and I have El Capatin version 10.11.5)
@@ -36,7 +41,7 @@ Reference:
 
 http://www.stata.com/manuals13/gsmc.pdf
 
-### How to run do files in IPython
+#### How to run do files in IPython
 - Use call method from subprocess model.  
 - See example in runstata.py under stata folder
 
